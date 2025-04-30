@@ -45,3 +45,7 @@ textarea {
   border: 1px solid #ccc;
   outline: none;
 }
+
+avatar {
+  border-radius: 50%;
+}

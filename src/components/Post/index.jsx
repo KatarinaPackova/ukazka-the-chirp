@@ -12,10 +12,19 @@ export const Post = ({ post }) => {
         <div className="post__head">
           <div className="post__user">
             <h2>{post.userName}</h2>
-            <a className="post__handle" href={`/profil.html?user=${post.userId}`}>@{post.userHandle}</a>
+            <a
+              className="post__handle"
+              href={`/profil.html?user=${post.userId}`}
+            >
+              @{post.userHandle}
+            </a>
           </div>
-          <button data-id={post.id} className="edit-btn">Edit</button>
-          <button data-id={post.id} className="delete-btn">Delete</button>
+          <button data-id={post.id} className="edit-btn">
+            Edit
+          </button>
+          <button data-id={post.id} className="delete-btn">
+            Delete
+          </button>
         </div>
         <p className="post__text">{post.text}</p>
       </div>
